@@ -40,8 +40,8 @@ Finally open `http://localhost/admin/api-tester`.
     
         'api-tester' => [
         
-            // route prefix for APIs
-            'prefix' => 'api',
+            // route prefix for APIs
+            'prefix' => 'api/',
 
             // auth guard for api
             'guard'  => 'api',

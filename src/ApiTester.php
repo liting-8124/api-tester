@@ -216,9 +216,7 @@ class ApiTester extends Extension
     {
         $routes = app('router')->getRoutes();
 
-        $prefix = static::config('prefix');
-
-        $routes = collect($routes)->filter(function ($route) use ($prefix) {
+        $routes = collect($routes)->filter(function ($route) {
             return Str::startsWith($route->uri, static::config('prefix'));
         })->map(function ($route) {
             return $this->getRouteInformation($route);
@@ -265,7 +263,7 @@ class ApiTester extends Extension
         if ($comment) {
             $parameters = [];
             preg_match_all('/\@SWG\\\Parameter\(\n(.*?)\)\n/s', $comment, $matches);
-            foreach (array_get($matches, 1, []) as $item) {
+            foreach (data_get($matches, 1, []) as $item) {
                 preg_match_all('/(\w+)=[\'"]?([^\r\n"]+)[\'"]?,?\n/s', $item, $match);
                 if (count($match) == 3) {
                     $match[2] = array_map(function ($val) {

@@ -1,19 +1,23 @@
 {
-    "name": "laravel-admin-ext/api-tester",
+    "name": "liting-8124/api-tester",
     "description": "Api tester for laravel",
     "type": "library",
     "keywords": ["laravel-admin", "api", "tester"],
-    "homepage": "https://github.com/laravel-admin-extensions/api-tester",
+    "homepage": "https://github.com/liting-8124/api-tester",
     "license": "MIT",
     "authors": [
         {
             "name": "z-song",
             "email": "zosong@126.com"
+        },
+        {
+            "name": "liting",
+            "email": "liting8124@gmail.com"
         }
     ],
     "require": {
         "php": ">=7.0.0",
-        "laravel/framework": "~5.5",
+        "laravel/framework": "5.5.*|5.6.*|5.7.*|5.8.*|^6.0|^7.0",
         "encore/laravel-admin": "~1.5"
     },
     "require-dev": {
