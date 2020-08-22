@@ -1,10 +1,12 @@
 API tester for laravel-admin
 ============================
 
+<!--
 [![StyleCI](https://styleci.io/repos/99563385/shield?branch=master)](https://styleci.io/repos/99563385)
 [![Packagist](https://img.shields.io/packagist/l/laravel-admin-ext/api-tester.svg?maxAge=2592000)](https://packagist.org/packages/laravel-admin-ext/api-tester)
 [![Total Downloads](https://img.shields.io/packagist/dt/laravel-admin-ext/api-tester.svg?style=flat-square)](https://packagist.org/packages/laravel-admin-ext/api-tester)
 [![Pull request welcome](https://img.shields.io/badge/pr-welcome-green.svg?style=flat-square)]()
+-->
 
 Inspired by [laravel-api-tester](https://github.com/asvae/laravel-api-tester).
 
@@ -17,16 +19,16 @@ Inspired by [laravel-api-tester](https://github.com/asvae/laravel-api-tester).
 ## Installation
 
 ```
-$ composer require laravel-admin-ext/api-tester -vvv
+$ composer require liting-8124/laext-api-tester -vvv
 
-$ php artisan vendor:publish --tag=api-tester
+$ php artisan vendor:publish --tag=laext-api-tester
 
 ```
 
 Then last run flowing command to import menu and permission: 
 
 ```
-$ php artisan admin:import api-tester
+$ php artisan admin:import laext-api-tester
 ```
 
 Finally open `http://localhost/admin/api-tester`.
