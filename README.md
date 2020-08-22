@@ -21,14 +21,14 @@ Inspired by [laravel-api-tester](https://github.com/asvae/laravel-api-tester).
 ```
 $ composer require liting-8124/laext-api-tester -vvv
 
-$ php artisan vendor:publish --tag=laext-api-tester
+$ php artisan vendor:publish --tag=api-tester
 
 ```
 
 Then last run flowing command to import menu and permission: 
 
 ```
-$ php artisan admin:import laext-api-tester
+$ php artisan admin:import api-tester
 ```
 
 Finally open `http://localhost/admin/api-tester`.
